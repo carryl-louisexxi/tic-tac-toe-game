@@ -1,5 +1,7 @@
 #include<stdio.h>
+
 char square[3][3]={{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};
+
 void board()
 {
 	system("cls");
@@ -11,6 +13,7 @@ void board()
 	printf("----------\n");
 	printf("|%c |%c | %c|", square[2][0],square[2][1],square[2][2]);
 }
+
 int checkwin()
 {
 		if(square[0][0]==square[0][1] && square[0][1]==square[0][2])
@@ -32,6 +35,7 @@ int checkwin()
 		else
 				return -1;
 }
+
 int main()
 {
 	int player=1, row, coloum,itr,itc,i;
